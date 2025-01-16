@@ -126,6 +126,7 @@ void convertFromSensorEvent(const sensors_event_t& src, Event* dst) {
 
         case SensorType::DEVICE_ORIENTATION:
         case SensorType::LIGHT:
+        case SensorType::REAR_LIGHT:
         case SensorType::PRESSURE:
         case SensorType::TEMPERATURE:
         case SensorType::PROXIMITY:
@@ -257,6 +258,7 @@ void convertToSensorEvent(const Event& src, sensors_event_t* dst) {
 
         case SensorType::DEVICE_ORIENTATION:
         case SensorType::LIGHT:
+        case SensorType::REAR_LIGHT:
         case SensorType::PRESSURE:
         case SensorType::TEMPERATURE:
         case SensorType::PROXIMITY:
